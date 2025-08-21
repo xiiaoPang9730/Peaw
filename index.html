@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Peaw Peaw</title>
-  <meta name="description" content="一个超轻量的相册页面，一次展示 4 张照片。" />
-  <!-- 社交分享预览（可选） -->
-  <meta property="og:title" content="我的 4 张照片" />
-  <meta property="og:description" content="打开 URL 就能看到 4 张照片。" />
+  <meta name="description" content="A super lightweight gallery page showing 2 photos." />
+
+  <!-- Social share preview (optional) -->
+  <meta property="og:title" content="My 2 Photos" />
+  <meta property="og:description" content="Open the URL to see 2 photos." />
   <meta property="og:type" content="website" />
-  <!-- 如果你想在社交平台预览显示某一张图，可以把下面的 content 换成你的第一张图片的绝对 URL -->
-  <meta property="og:image" content="https://your-username.github.io/your-repo/photo1.jpg" />
+  <meta property="og:image" content="https://xiaopang9730.github.io/Peaw/p1.png" />
 
   <style>
     :root { --bg: #0b0c10; --fg: #e8e8e8; --muted:#9aa0a6; --card:#15171c; }
@@ -21,12 +21,12 @@
       background: var(--bg); color: var(--fg);
       display: flex; flex-direction: column; align-items: center; gap: 18px;
     }
-    header { width: 100%; max-width: 1100px; padding: 20px; }
+    header { width: 100%; max-width: 900px; padding: 20px; text-align: center; }
     header h1 { margin: 12px 0 0; font-size: 22px; font-weight: 700; }
     header p { margin: 6px 0 0; color: var(--muted); font-size: 14px; }
 
     .grid {
-      width: 100%; max-width: 1100px; padding: 0 20px 24px;
+      width: 100%; max-width: 900px; padding: 0 20px 24px;
       display: grid; gap: 14px;
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -44,38 +44,25 @@
 <body>
   <header>
     <h1>Peaw Peaw</h1>
-    <p>柬埔寨我最可愛~
-      <!-- 想隐藏标题和说明？只需删除 header 元素即可。-->
-    </p>
+    <p>The cutest in Cambodia ~</p>
   </header>
 
   <main class="grid">
-    <!-- 把下面四个 <img> 的 src 换成你的图片地址。可以是相对路径（例如 images/photo1.jpg）或绝对 URL（例如 https://your-username.github.io/your-repo/photo1.jpg）。-->
     <figure class="card">
-      <img src="p1.png" alt="照片 1" loading="lazy" />
-      <figcaption class="cap">照片 1 的说明（可选）</figcaption>
+      <img src="p1.png" alt="Photo 1" loading="lazy" />
+      <figcaption class="cap">Photo 1 (optional caption)</figcaption>
     </figure>
 
     <figure class="card">
-      <img src="p2.png" alt="照片 2" loading="lazy" />
-      <figcaption class="cap">照片 2 的说明（可选）</figcaption>
-    </figure>
-
-    <figure class="card">
-      <img src="images/photo3.jpg" alt="照片 3" loading="lazy" />
-      <figcaption class="cap">照片 3 的说明（可选）</figcaption>
-    </figure>
-
-    <figure class="card">
-      <img src="images/photo4.jpg" alt="照片 4" loading="lazy" />
-      <figcaption class="cap">照片 4 的说明（可选）</figcaption>
+      <img src="p2.png" alt="Photo 2" loading="lazy" />
+      <figcaption class="cap">Photo 2 (optional caption)</figcaption>
     </figure>
   </main>
 
   <footer>
-    <span>© 2025 我的相册</span>
+    <span>© 2025 My Album</span>
     ·
-    <a href="./">刷新</a>
+    <a href="./">Refresh</a>
   </footer>
 </body>
 </html>
